@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "directories": {
-    "test": "test"
+    "test": "unit-test/test"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "node test-runner.js unit-test",
+    "test:unit": "node test-runner.js unit-test",
+    "test:async": "node test-runner.js async-test",
+    "test:all": "mocha */test/**/*.test.js",
+    "test:custom": "node test-runner.js"
   },
   "keywords": [],
   "author": "",
