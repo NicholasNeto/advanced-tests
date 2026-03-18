@@ -9,6 +9,7 @@
     "test": "node test-runner.js unit-test",
     "test:unit": "node test-runner.js unit-test",
     "test:async": "node test-runner.js async-test",
+    "test:object": "node test-runner.js value-object",
     "test:all": "mocha */test/**/*.test.js",
     "test:custom": "node test-runner.js"
   },
